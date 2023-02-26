@@ -9,7 +9,7 @@ const Screen = () => {
     <div>
       <Header></Header>
       <Outlet></Outlet>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 };
