@@ -14,8 +14,10 @@ const Home = () => {
       {/* <img src={banner} alt="Banner Graphic" /> */}
       <div className="banner-container">
         <h1 className={`banner-text ${animate ? "animate" : ""}`}>
-          <span>Premium</span> Animated Banner Text
+          Animated Banner Text
+          <span>Ashikur</span>
         </h1>
+        <p className="scroll-down">Scroll down to learn</p>
       </div>
     </div>
   );
