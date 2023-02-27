@@ -10,21 +10,6 @@ const Home = () => {
     setAnimate(true);
   }, []);
 
-  // class WebBanner extends React.Component {
-  //   constructor(props) {
-  //     super(props);
-  //     this.state = {
-  //       navbarOpen: false
-  //     };
-  //     this.toggleNavbar = this.toggleNavbar.bind(this);
-  //   }
-
-  //   toggleNavbar() {
-  //     this.setState(prevState => ({
-  //       navbarOpen: !prevState.navbarOpen
-  //     }));
-  //   }
-
   return (
     <div>
       <div className="banner">
@@ -73,7 +58,9 @@ const Home = () => {
                 </li>
               </ul>
             </div>
-            <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+            <a className="btn btn-ghost text-yellow-500 normal-case text-xl">
+              daisyUI
+            </a>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
@@ -101,10 +88,10 @@ const Home = () => {
         </div>
         {/* <img src={banner} alt="Banner Graphic" /> */}
         <div className="banner-container">
-          <h1 className={`banner-text ${animate ? "animate" : ""}`}>
+          <h3 className={`banner-text ${animate ? "animate" : ""}`}>
             Animated Banner Text
             <span>Ashikur</span>
-          </h1>
+          </h3>
         </div>
         <p className="scroll-down">Scroll down to learn</p>
       </div>

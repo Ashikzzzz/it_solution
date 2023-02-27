@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     animation: bgAnimation 20s linear infinite;
-    
+    /* position: fixed; */
   }
   
   .banner::before {
@@ -22,7 +22,7 @@
    
 }
 
-  .banner h1 {
+  .banner h3 {
     color: white;
     font-size: 3rem;
     font-weight: bold;
@@ -42,7 +42,7 @@
 
 
 .nav-banner{
-  position: fixed;
+  position:fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -70,7 +70,7 @@
 }
 
 .navbar li a {
-  color: white;
+  color:#f1c40f;
   text-decoration: none;
   font-weight: bold;
   text-align: center;
@@ -78,7 +78,7 @@
 
 .navbar li a:hover {
   text-decoration: underline;
-  color: #f1c40f;
+  color:chartreuse;
 }
   
   .scroll-down {
@@ -145,12 +145,12 @@
   
   .banner-text span {
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 60%;
+    bottom: 60%;
     transform: translate(50%, -50%);
     background-color: #f1c40f;
     color: #fff;
-    padding: 0.5rem;
+    padding: 0.1rem;
     border-radius: 5px;
     font-size: 2rem;
     font-weight: 500;
@@ -187,17 +187,17 @@
       height: 80px;
       width: 60%;
     }
-    .banner-container h1{
+    .banner-container h3{
       font-size:large;
     }
     .banner-text span{
       position: absolute;
-      left: 20%;
-      top: 20%;
+      left: 60%;
+      bottom: 90%;
       transform: translate(10%, -30%);
       background-color: #f1c40f;
       color: #fff;
-      padding: 0.5rem;
+      padding: 0.1rem;
       border-radius: 5px;
       font-size: 1rem;
       font-weight: 500;
@@ -221,7 +221,7 @@
       position: absolute;
       top: 170px;
     }
-    .banner-container h1{
+    .banner-container h3{
       font-size:small;
     }
   .scroll-down{
@@ -232,8 +232,8 @@
   
   .banner-text span{
     position: absolute;
-    left: 20%;
-    top: 20%;
+    left: 60%;
+    bottom: 60%;
     transform: translate(10%, -30%);
     background-color: #f1c40f;
     color: #fff;
