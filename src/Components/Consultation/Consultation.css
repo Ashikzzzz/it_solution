@@ -1,5 +1,7 @@
-.consult{
-    height: 100vh;
+
+.consult {
+  height: 70vh;
+  width: 50%;
     background-image: url('../../assets/consult.jpg');
     background-size: cover;
     background-position: center;
@@ -7,7 +9,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid lightsalmon;
+    border-radius: 10%;
     animation: bgAnimation 20s linear infinite;
+    box-shadow:  0px 15px 15px #007bff;
 }
 @keyframes bgAnimation {
     0% {
@@ -19,6 +24,36 @@
     100% {
       background-position: 0 0;
     }
+  }
+
+  .animated-button {
+    padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: rgba(57, 119, 121, 0.86);
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  /* overflow: hidden; */
+  }
+
+  /* button animated */
+  .animated-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color:darkorange;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  
+  .animated-button:hover::before {
+    animation: ripple 1s ease-out;
   }
 
 /* .consult::before {
@@ -35,5 +70,13 @@
     .consult-text h1{
         font-size: 1.5rem;
     
+    }
+    .consult-container{
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+    .consult{
+      width: 100%;
     }
 }
