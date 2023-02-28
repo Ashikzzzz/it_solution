@@ -1,0 +1,39 @@
+.consult{
+    height: 100vh;
+    background-image: url('../../assets/consult.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: bgAnimation 20s linear infinite;
+}
+@keyframes bgAnimation {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+/* .consult::before {
+    content: ""; 
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    height: 55vh;
+    background-color: black;
+    opacity: .4;
+   
+} */
+@media only screen and (max-width: 480px){
+    .consult-text h1{
+        font-size: 1.5rem;
+    
+    }
+}
