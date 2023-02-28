@@ -70,7 +70,7 @@
 }
 
 .navbar li a {
-  color:#f1c40f;
+  color:white;
   text-decoration: none;
   font-weight: bold;
   text-align: center;
@@ -78,7 +78,7 @@
 
 .navbar li a:hover {
   text-decoration: underline;
-  color:chartreuse;
+  color:gray;
 }
   
   .scroll-down {
